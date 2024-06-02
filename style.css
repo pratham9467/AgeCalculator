@@ -1,0 +1,271 @@
+
+html {
+    color: #222;
+    background: linear-gradient(violet, red);
+    font-size: 1em;
+
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+.hidden,
+[hidden] {
+    display: none !important;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+@media only screen and (min-width: 35em) {
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+h1 {
+
+    font-family: "Algerian", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+main {
+    position: absolute;
+}
+
+.calculator {
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+}
+
+.content {
+    height: 19vh;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: rgba(221, 215, 215, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+span {
+    color: #fdfd02;
+    font-size: 4rem;
+}
+
+button {
+    height: 6.6vh;
+    width: 10vw;
+    border: none;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #fdfd02;
+    transition: background-color 100ms;
+}
+
+input {
+    height: 7vh;
+    width: 22vw;
+    border-radius: 2px;
+    border: none;
+    font-size: 20px;
+    font-family: "fangsong", serif;
+    padding-left: 10px;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+    background-color: gainsboro;
+    text-transform: uppercase;
+}
+
+input::-webkit-calendar-picker-indicator {
+    height: auto;
+    width: 25vw;
+    top: 31.5vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-size: 30px;
+    background-position: calc(100% - 10px);
+}
+
+#copyright {
+    position: fixed;
+    bottom: 1vh;
+    left: 42%;
+    font-weight: 500;
+}
+
+#yourAge {
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    font-size: 22px;
+    font-weight: 600;
+    animation: textscale 1500ms;
+    animation-iteration-count: 1;
+}
+
+#yourAge span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@keyframes textscale {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
